@@ -26,7 +26,7 @@ View Formula 1 Race Intelligence Dashboard on Tableau Public
 
 📁 Project Files
 
-* FORMULA 1_RACE_Intelligence Dashboard.twbx — Tableau packaged workbook containing the dashboard and visualizations.
+https://public.tableau.com/app/profile/anjali.dwivedi4458/viz/FORMULA1_RACE_IntelligenceDashboard/Story1?publish=yes
 * README.md — Project overview, objectives, tools, and instructions.
 * docs/Project_Documentation.md — Detailed project documentation.
 
