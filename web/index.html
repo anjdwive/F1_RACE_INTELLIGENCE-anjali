@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formula 1 Race Intelligence Dashboard</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background: #101014;
+        color: white;
+    }
+    header {
+        background: #e10600;
+        padding: 28px 15px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    header p {
+        font-size: 15px;
+    }
+    nav {
+        background: #202027;
+        padding: 15px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+    main {
+        max-width: 1200px;
+        margin: 35px auto;
+        padding: 20px;
+    }
+    .intro {
+        margin-bottom: 30px;
+        line-height: 1.8;
+    }
+    .dashboard {
+        background: #1c1c24;
+        padding: 22px;
+        border-radius: 10px;
+    }
+    .dashboard h2 {
+        margin-bottom: 20px;
+    }
+    iframe {
+        width: 100%;
+        height: 700px;
+        border: none;
+        background: white;
+    }
+    .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 13px 20px;
+        background: #e10600;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    footer {
+        text-align: center;
+        padding: 25px;
+        background: #202027;
+        color: #cccccc;
+    }
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 23px;
+        }
+        iframe {
+            height: 500px;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>🏎️ Formula 1 Race Intelligence Dashboard</h1>
+    <p>Explore Formula 1 racing data through interactive visualizations</p>
+</header>
+<nav>
+    <a href="#about">About</a>
+    <a href="#dashboard">Dashboard</a>
+</nav>
+<main>
+    <section class="intro" id="about">
+        <h2>About the Project</h2>
+        <p>
+            The Formula 1 Race Intelligence Dashboard is a data
+            visualization project developed using Tableau.
+            It presents racing information through graphical
+            visualizations to help users explore available data
+            and understand performance patterns.
+        </p>
+    </section>
+    <section class="dashboard" id="dashboard">
+        <h2>Interactive Tableau Dashboard</h2>
+        <iframe
+            src="https://public.tableau.com/views/FORMULA1_RACE_IntelligenceDashboard/Story1?:showVizHome=no"
+            title="Formula 1 Race Intelligence Dashboard"
+            loading="lazy">
+        </iframe>
+        <a
+            class="button"
+            href="https://public.tableau.com/app/profile/anjali.dwivedi4458/viz/FORMULA1_RACE_IntelligenceDashboard/Story1?publish=yes"
+            target="_blank"
+            rel="noopener noreferrer">
+            Open Dashboard on Tableau Public
+        </a>
+    </section>
+</main>
+<footer>
+    <p>Formula 1 Race Intelligence Dashboard</p>
+    <p>Data Visualization using Tableau Public</p>
+</footer>
+</body>
+</html>
