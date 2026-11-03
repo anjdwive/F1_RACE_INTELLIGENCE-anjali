@@ -1,0 +1,195 @@
+/* Formula 1 Race Intelligence Dashboard */
+
+:root {
+–red: #e10600;
+–background: #101014;
+–surface: #1b1b23;
+–text: #ffffff;
+–muted: #b9b9c3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: var(–background);
+color: var(–text);
+line-height: 1.6;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 7%;
+background: #18181f;
+border-bottom: 2px solid var(–red);
+}
+
+.logo {
+font-size: 22px;
+font-weight: bold;
+}
+
+.logo span {
+color: var(–red);
+}
+
+nav a {
+color: var(–text);
+text-decoration: none;
+margin-left: 22px;
+}
+
+nav a:hover {
+color: var(–red);
+}
+
+.hero {
+min-height: 420px;
+padding: 80px 8%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background: linear-gradient(120deg, #3b0808, #101014 70%);
+}
+
+.tag {
+color: #ff453a;
+font-weight: bold;
+letter-spacing: 3px;
+}
+
+h1 {
+font-size: clamp(36px, 6vw, 64px);
+line-height: 1.15;
+margin: 18px 0;
+}
+
+h1 span {
+color: var(–red);
+}
+
+.hero p,
+.section-description,
+.card p,
+.about-text {
+color: var(–muted);
+}
+
+.hero p {
+max-width: 620px;
+margin-bottom: 25px;
+}
+
+.button {
+display: inline-block;
+background: var(–red);
+color: white;
+text-decoration: none;
+padding: 12px 22px;
+border-radius: 4px;
+font-weight: bold;
+width: fit-content;
+}
+
+.button:hover {
+background: #b80500;
+}
+
+section {
+padding: 60px 7%;
+}
+
+.section-heading {
+font-size: 30px;
+margin-bottom: 10px;
+}
+
+.section-description {
+margin-bottom: 28px;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+}
+
+.card {
+background: var(–surface);
+border: 1px solid #33333d;
+border-top: 3px solid var(–red);
+border-radius: 6px;
+padding: 24px;
+}
+
+.card h3 {
+margin-bottom: 10px;
+}
+
+.dashboard-section {
+background: #18181f;
+}
+
+.dashboard-box {
+background: white;
+border: 1px solid #393943;
+border-radius: 6px;
+padding: 12px;
+}
+
+.dashboard-frame {
+width: 100%;
+height: 700px;
+border: none;
+}
+
+.dashboard-note {
+color: var(–muted);
+margin-top: 14px;
+font-size: 14px;
+}
+
+.dashboard-link {
+margin-top: 20px;
+}
+
+.about-text {
+max-width: 850px;
+}
+
+footer {
+text-align: center;
+padding: 25px 7%;
+border-top: 1px solid #33333d;
+color: #9999a4;
+font-size: 13px;
+}
+
+@media (max-width: 600px) {
+header {
+flex-direction: column;
+gap: 12px;
+}
+
+nav a {
+    margin: 0 7px;
+    font-size: 13px;
+}
+section {
+    padding: 40px 7%;
+}
+.dashboard-frame {
+    height: 500px;
+}
+
+}
